@@ -5,26 +5,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= title %></title>
+  <title>Welcome to Workout Tracker</title>
   <!-- Include your custom styles -->
-  <link rel="stylesheet"  type="text/css" src="/public/css/Content/style.css"> <!-- Updated path to your CSS file -->
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body class="bg-light">
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light">
-    <!-- ... Your navbar content ... -->
+    <div class="container">
+      <a class="navbar-brand custom-text" href="#">Workout Tracker</a>
+      <!-- ... Your navbar content ... -->
+    </div>
   </nav>
 
   <!-- Main Content -->
   <div class="container mt-5">
-    <h1 class="display-4 custom-text"><%= title %></h1>
-    <!-- Your workout content goes here -->
-    <ul class="list-group">
-      <li class="list-group-item">Workout 1</li>
-      <li class="list-group-item">Workout 2</li>
-      <li class="list-group-item">Workout 3</li>
-      <!-- Add dynamic workout list here based on your data -->
-    </ul>
+    <h1 class="display-4 custom-text">Welcome to Workout Tracker</h1>
+    <p class="lead">Track your workouts, set goals, and achieve your fitness milestones with our Workout Tracker app. Get started today!</p>
+    <a class="btn btn-primary" href="/workouts">Explore Workouts</a>
   </div>
 
   <!-- Footer -->

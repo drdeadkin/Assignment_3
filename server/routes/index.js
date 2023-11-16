@@ -1,8 +1,9 @@
+// routes/workouts.js
 const express = require('express');
 const router = express.Router();
 
-router.get('/workouts', (req, res) => {
-  res.render('workouts', { title: 'Workout Tracker' });
+router.get('/', (req, res) => {
+  res.render('index');
 });
 
 module.exports = router;
