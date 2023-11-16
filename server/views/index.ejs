@@ -1,4 +1,4 @@
-<!-- views/index.ejs -->
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,28 +6,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome to Workout Tracker</title>
-  <!-- Include your custom styles -->
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/style.css"> <!--link to style sheet--> 
 </head>
 <body class="bg-light">
-  <!-- Navbar -->
+  <%- include('partials/header'); %> <!--shared header from partials folder--> 
+ 
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
-      <a class="navbar-brand custom-text" href="#">Workout Tracker</a>
-      <!-- ... Your navbar content ... -->
+      <a class="navbar-brand custom-text" href="/">Home</a>
+      <a class="navbar-brand custom-text" href="/workouts">Workout Tracker</a>
     </div>
   </nav>
 
-  <!-- Main Content -->
+  
   <div class="container mt-5">
     <h1 class="display-4 custom-text">Welcome to Workout Tracker</h1>
     <p class="lead">Track your workouts, set goals, and achieve your fitness milestones with our Workout Tracker app. Get started today!</p>
     <a class="btn btn-primary" href="/workouts">Explore Workouts</a>
   </div>
 
-  <!-- Footer -->
-  <div class="footer">
-    <p class="text-white">&copy; 2023 Workout Tracker</p>
-  </div>
+
+  <%- include('partials/footer'); <!--shared footer from partials folder--> 
 </body>
 </html>

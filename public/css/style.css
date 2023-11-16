@@ -1,14 +1,17 @@
-
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Set minimum height of the body to 100% of the viewport height */
   background-color: #fcecc9;
   color: #333; /* Main text color */
   font-family: 'Arial', sans-serif; /* Use a web-safe font */
 }
 
 .container {
+  flex: 3; /* Allow the container to grow and take up remaining vertical space */
   background-color: #fcecc9;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 100px;
   margin-top: 20px;
 }
 
@@ -25,6 +28,7 @@ body {
 .navbar-brand {
   color: #f93943;
   font-weight: bold;
+  margin-right: 15px;
 }
 
 .navbar-toggler-icon {
@@ -57,20 +61,8 @@ body {
 .footer {
   background-color: #fcb0b3;
   padding: 10px 0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
   text-align: center;
   color: #fff;
+  margin-top: auto; /* Push the footer to the bottom */
 }
 
-/* Responsive Design (Optional) */
-
-@media (max-width: 768px) {
-  .navbar-nav {
-      text-align: center; /* Center the links on small screens */
-  }
-  .navbar-nav .nav-item {
-      margin-bottom: 10px; /* Add space between links on small screens */
-  }
-}
