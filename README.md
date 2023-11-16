@@ -5,3 +5,4 @@
 
 
 Css file crafted without bootstrap.
+Step 7, 8 and 9 were not able to be completed due to personal issues and time constraints with other classes.
