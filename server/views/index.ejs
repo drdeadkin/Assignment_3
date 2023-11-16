@@ -1,0 +1,35 @@
+<!-- views/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <!-- Include your custom styles -->
+  <link rel="stylesheet"  type="text/css" src="/public/css/Content/style.css"> <!-- Updated path to your CSS file -->
+</head>
+<body class="bg-light">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <!-- ... Your navbar content ... -->
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mt-5">
+    <h1 class="display-4 custom-text"><%= title %></h1>
+    <!-- Your workout content goes here -->
+    <ul class="list-group">
+      <li class="list-group-item">Workout 1</li>
+      <li class="list-group-item">Workout 2</li>
+      <li class="list-group-item">Workout 3</li>
+      <!-- Add dynamic workout list here based on your data -->
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p class="text-white">&copy; 2023 Workout Tracker</p>
+  </div>
+</body>
+</html>

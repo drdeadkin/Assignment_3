@@ -1,0 +1,76 @@
+
+body {
+  background-color: #fcecc9;
+  color: #333; /* Main text color */
+  font-family: 'Arial', sans-serif; /* Use a web-safe font */
+}
+
+.container {
+  background-color: #fcecc9;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.custom-text {
+  color: #f93943;
+}
+
+/* Navbar Styling */
+
+.navbar {
+  background-color: #fcb0b3;
+}
+
+.navbar-brand {
+  color: #f93943;
+  font-weight: bold;
+}
+
+.navbar-toggler-icon {
+  border-color: #f93943;
+}
+
+.navbar-nav .nav-link {
+  color: #f93943;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+  color: #333;
+  background-color: #f93943; /* Highlight active link background color */
+}
+
+/* Main Content Styling */
+
+.list-group {
+  margin-top: 20px;
+}
+
+.list-group-item {
+  background-color: #fcb0b3;
+  color: #333;
+  border-color: #f93943;
+}
+
+/* Footer Styling */
+
+.footer {
+  background-color: #fcb0b3;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+/* Responsive Design (Optional) */
+
+@media (max-width: 768px) {
+  .navbar-nav {
+      text-align: center; /* Center the links on small screens */
+  }
+  .navbar-nav .nav-item {
+      margin-bottom: 10px; /* Add space between links on small screens */
+  }
+}
